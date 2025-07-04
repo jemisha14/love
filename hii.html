@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For the One I Love ❤️</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #ff6b81;
+      padding: 10px;
+    }
+
+    nav button {
+      background: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #d6336c;
+    }
+
+    nav button:hover {
+      background-color: #ffe6eb;
+    }
+
+    .tab {
+      display: none;
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .active {
+      display: block;
+    }
+
+    h1 {
+      color: #d6336c;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .heart {
+      font-size: 60px;
+      animation: beat 1s infinite;
+      color: red;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    .button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ff6b81;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background-color: #e5506b;
+    }
+
+    .gallery img {
+      width: 200px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    ul {
+      text-align: left;
+      max-width: 500px;
+      margin: 30px auto;
+      font-size: 18px;
+      color: #4a148c;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #5e2b5e;
+      margin-top: 30px;
+      font-size: 17px;
+    }
+
+    audio {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <button onclick="openTab('home')">Home 🏠</button>
+    <button onclick="openTab('memories')">Memories 📸</button>
+    <button onclick="openTab('reasons')">Reasons 💘</button>
+    <button onclick="openTab('thankyou')">Promise ✨</button>
+    <button onclick="openTab('foryou')">For You Only 💌</button>
+  </nav>
+
+  <!-- HOME TAB -->
+  <div id="home" class="tab active">
+    <div class="heart">❤️</div>
+    <h1> Please Forgive Me... 🥺</h1>
+    <p>
+      I know I made a mistake,<br>
+      but you’re always in my heart.<br>
+      Please give me one more chance.<br><br>
+      I promise to never stop making you smile ❤️
+    </p>
+    <button class="button" onclick="alert('I love you 💖')">Click if you miss me</button>
+    <p style="margin-top: 20px; font-size: 16px; color: #6a1b9a;">
+      No one will ever love you like I do. You are my safe place too. 🤗
+    </p>
+  </div>
+
+  <!-- MEMORIES TAB -->
+  <div id="memories" class="tab">
+    <h1>Our Sweet Memories 📸</h1>
+    <p>Remember these moments? They mean the world to me.</p>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/200x200?text=Us+1" alt="Memory 1">
+      <img src="https://via.placeholder.com/200x200?text=Us+2" alt="Memory 2">
+      <img src="https://via.placeholder.com/200x200?text=Us+3" alt="Memory 3">
+    </div>
+  </div>
+
+  <!-- REASONS TAB -->
+  <div id="reasons" class="tab">
+    <h1>10 Reasons Why I Love You 💘</h1>
+    <ul>
+      <li>You make me smile like no one else.</li>
+      <li>Your hugs feel like home.</li>
+      <li>You understand me even when I don’t speak.</li>
+      <li>Your laugh is my favorite sound.</li>
+      <li>You’re my peace in chaos.</li>
+      <li>You believe in me when I don't.</li>
+      <li>Every moment with you is special.</li>
+      <li>Your kindness melts my heart.</li>
+      <li>I feel safe with you.</li>
+      <li>Because you are YOU. And that’s enough. 💖</li>
+    </ul>
+  </div>
+
+  <!-- THANK YOU TAB -->
+  <div id="thankyou" class="tab">
+    <h1>My Promise to You ✨</h1>
+    <p>
+      I know we’ve had ups and downs, but one thing will never change:<br>
+      I love you — endlessly and unconditionally.<br><br>
+      I promise to grow, to listen, to care, and to love you even more every day.
+    </p>
+    <button class="button" onclick="openTab('home')">Back to Start ⬅️</button>
+  </div>
+
+  <!-- FOR YOU ONLY TAB -->
+  <div id="foryou" class="tab">
+    <h1>Only For You, </h1>
+    <p>
+      You're not just a part of my life...<br>
+      You're the <strong>most important</strong> part of it.<br><br>
+      Whenever you feel low or unsure,<br>
+      Remember this: <strong>I choose YOU every single day.</strong><br><br>
+      You are safe with me. Always. 🤝❤️
+    </p>
+    <div class="quote">
+      "તમે મારા માટે કેટલી ખાસ છો એ કદાચ શબ્દોમાં કહી ન શકું,<br>
+      પણ મારા હ્રદયના દરેક ધબકારમાં તું છે... તું જ છે..."
+    </div>
+
+    <button class="button" onclick="alert('I’ll always be here for you 🫶')">Feel My Promise</button>
+  </div>
+
+  <!-- JavaScript for Tabs -->
+  <script>
+    function openTab(tabId) {
+      const tabs = document.querySelectorAll('.tab');
+      tabs.forEach(tab => tab.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
